@@ -33,7 +33,7 @@ namespace SecondLifeAPI
             services.AddScoped<IAnnonceService, AnnonceService>();
             services.AddScoped<IAnnonceRepository, AnnonceRepository>();
             services.AddDbContextPool<AnnonceDbContext>(x => 
-            x.UseMySql("server=localhost;port=3306;database=secondlife;uid=SecondLifeAPI;password=password;TreatTinyAsBoolean=false"));
+            x.UseMySql(Configuration.GetConnectionString("SecondLifeConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
