@@ -14,15 +14,5 @@ namespace SecondLife.Model
         {
 
         }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseMySql(
-                    "server=localhost;port=3306;database=secondlife;uid=SecondLifeAPI;password=password;TreatTinyAsBoolean=false");
-            }
-            base.OnConfiguring(optionsBuilder);
-        }
     }
 }
