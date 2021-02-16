@@ -10,6 +10,9 @@ namespace SecondLife.Repositories.Repositories
         List<Annonce> All();
         Annonce One();
         Annonce Add(Annonce annonce);
-        bool Exists(Annonce annonce);        
+        bool Exists(Annonce annonce);
+        void Update(Annonce updatedObject);
+        bool Delete(int id);
+        Annonce Get(int id);
     }
 }

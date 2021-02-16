@@ -1,4 +1,5 @@
-﻿using SecondLife.Model.Entities;
+﻿using Microsoft.AspNetCore.JsonPatch;
+using SecondLife.Model.Entities;
 using SecondLife.Repositories.Repositories;
 using System;
 using System.Collections.Generic;
@@ -20,9 +21,9 @@ namespace SecondLife.Services.Services
             return _repo.All();
         }
 
-        public Annonce Get(in int id)
+        public Annonce Get(int id)
         {
-            return _repo.One();
+            return _repo.Get(id);
         }
 
         public Annonce Add(Annonce annonce)
@@ -38,6 +39,24 @@ namespace SecondLife.Services.Services
             }
 
             return _repo.Add(annonce);
+        }
+
+        public Annonce Patch(int id, JsonPatchDocument<Annonce> document)
+        {
+            var updatedObject = Get(id);
+            document.ApplyTo(updatedObject);
+            _repo.Update(updatedObject);
+            return updatedObject;
+        }
+
+        public bool Delete(int id)
+        {
+            return _repo.Delete(id);
+        }
+
+        public Annonce Get(in int id)
+        {
+            return _repo.Get(id);
         }
     }
 }

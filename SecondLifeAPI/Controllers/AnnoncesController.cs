@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using SecondLife.Model.Entities;
 using SecondLife.Services.Services;
@@ -31,6 +32,13 @@ namespace SecondLifeAPI.Controllers
             return res;
         }
 
+        [HttpPatch("{id}")]
+        public ActionResult<Annonce> Patch(int id, [FromBody]JsonPatchDocument<Annonce> document)
+        {
+            var updateAnnonce = _service.Patch(id, document);
+            return Ok(updateAnnonce);
+        }
+
         [HttpGet("{id}")]
         public ActionResult<Annonce> Get(int id)
         {
@@ -46,6 +54,18 @@ namespace SecondLifeAPI.Controllers
                 return BadRequest("invalid title");
             }
             return res;
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult Delete(int id)
+        {
+            var res = _service.Delete(id);
+            if(res)
+            {
+                return Ok();
+            }
+
+            return BadRequest();
         }
     }
 }
