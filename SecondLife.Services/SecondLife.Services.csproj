@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SecondLife.Model\SecondLife.Model.csproj" />
+    <ProjectReference Include="..\SecondLife.Repositories\SecondLife.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>
