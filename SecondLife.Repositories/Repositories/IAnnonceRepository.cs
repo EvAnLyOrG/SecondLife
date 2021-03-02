@@ -15,4 +15,12 @@ namespace SecondLife.Repositories.Repositories
         bool Delete(int id);
         Annonce Get(int id);
     }
+
+    public interface IRepository<T>
+    {
+        List<T> All(); 
+        
+    }
+
+
 }

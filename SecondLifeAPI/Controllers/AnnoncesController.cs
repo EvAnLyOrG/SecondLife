@@ -66,6 +66,7 @@ namespace SecondLifeAPI.Controllers
             }
 
             return BadRequest();
+            
         }
     }
 }

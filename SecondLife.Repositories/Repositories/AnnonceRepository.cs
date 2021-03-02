@@ -1,5 +1,6 @@
 ﻿using SecondLife.Model;
 using SecondLife.Model.Entities;
+using SecondLife.Repositories.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,19 +8,19 @@ using System.Text;
 
 namespace SecondLife.Repositories.Repositories
 {
-    public class AnnonceRepository : IAnnonceRepository
+    public class Repository<T> : IRepository<T>
     {
         private readonly AnnonceDbContext _context;
 
-        public AnnonceRepository(AnnonceDbContext context)
+        public Repository(AnnonceDbContext context)
         {
             _context = context;
         }
 
-        public List<Annonce> All()
-        {
-            return _context.Annonces.ToList();
-        }
+        public List<T> All()
+          {
+            return _context.Set<T>.ToList();
+          }
 
         public Annonce One()
         {

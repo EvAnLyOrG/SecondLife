@@ -1132,19 +1132,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marlo\\.nuget\\packages\\": {}
+    "C:\\Users\\d-dra\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj",
+      "projectUniqueName": "E:\\Users\\Ryan\\Bureau\\CNAM\\NFP121\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj",
       "projectName": "SecondLife.Model",
-      "projectPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj",
-      "packagesPath": "C:\\Users\\marlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\obj\\",
+      "projectPath": "E:\\Users\\Ryan\\Bureau\\CNAM\\NFP121\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj",
+      "packagesPath": "C:\\Users\\d-dra\\.nuget\\packages\\",
+      "outputPath": "E:\\Users\\Ryan\\Bureau\\CNAM\\NFP121\\SecondLife\\SecondLife.Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\marlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\d-dra\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1204,7 +1204,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

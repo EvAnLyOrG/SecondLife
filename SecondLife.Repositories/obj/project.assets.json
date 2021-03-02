@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
+      "Google.Apis.Core/1.50.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "dependencies": {
@@ -227,7 +239,7 @@
           "lib/netstandard2.1/MySqlConnector.dll": {}
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -367,6 +379,28 @@
     }
   },
   "libraries": {
+    "Google.Apis.Core/1.50.0": {
+      "sha512": "E/ioNStr2z0LXXAaGR7bnbRQqozjFb12mi5zs/Bm4c2ZH9uoKOxz9FbQkNRq4R3yHif5gxt3nh8Ei7g9qRiYxQ==",
+      "type": "package",
+      "path": "google.apis.core/1.50.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.core.1.50.0.nupkg.sha512",
+        "google.apis.core.nuspec",
+        "lib/net45/Google.Apis.Core.dll",
+        "lib/net45/Google.Apis.Core.pdb",
+        "lib/net45/Google.Apis.Core.xml",
+        "lib/netstandard1.3/Google.Apis.Core.dll",
+        "lib/netstandard1.3/Google.Apis.Core.pdb",
+        "lib/netstandard1.3/Google.Apis.Core.xml",
+        "lib/netstandard2.0/Google.Apis.Core.dll",
+        "lib/netstandard2.0/Google.Apis.Core.pdb",
+        "lib/netstandard2.0/Google.Apis.Core.xml"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "sha512": "yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
       "type": "package",
@@ -747,10 +781,10 @@
         "mysqlconnector.nuspec"
       ]
     },
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/11.0.2",
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -773,8 +807,9 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "Pomelo.EntityFrameworkCore.MySql/3.2.4": {
@@ -1115,23 +1150,24 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
+      "Google.Apis.Core >= 1.50.0",
       "SecondLife.Model >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marlo\\.nuget\\packages\\": {}
+    "C:\\Users\\d-dra\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Repositories\\SecondLife.Repositories.csproj",
+      "projectUniqueName": "E:\\Users\\Ryan\\Bureau\\CNAM\\NFP121\\SecondLife\\SecondLife.Repositories\\SecondLife.Repositories.csproj",
       "projectName": "SecondLife.Repositories",
-      "projectPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Repositories\\SecondLife.Repositories.csproj",
-      "packagesPath": "C:\\Users\\marlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Repositories\\obj\\",
+      "projectPath": "E:\\Users\\Ryan\\Bureau\\CNAM\\NFP121\\SecondLife\\SecondLife.Repositories\\SecondLife.Repositories.csproj",
+      "packagesPath": "C:\\Users\\d-dra\\.nuget\\packages\\",
+      "outputPath": "E:\\Users\\Ryan\\Bureau\\CNAM\\NFP121\\SecondLife\\SecondLife.Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\marlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\d-dra\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1145,8 +1181,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj": {
-              "projectPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj"
+            "E:\\Users\\Ryan\\Bureau\\CNAM\\NFP121\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj": {
+              "projectPath": "E:\\Users\\Ryan\\Bureau\\CNAM\\NFP121\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj"
             }
           }
         }
@@ -1160,6 +1196,12 @@
     "frameworks": {
       "netstandard2.1": {
         "targetAlias": "netstandard2.1",
+        "dependencies": {
+          "Google.Apis.Core": {
+            "target": "Package",
+            "version": "[1.50.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -1175,7 +1217,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
