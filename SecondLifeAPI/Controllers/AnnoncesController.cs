@@ -13,9 +13,9 @@ namespace SecondLifeAPI.Controllers
     [ApiController, Route("api/[controller]")]
     public class AnnoncesController : ControllerBase
     {
-        private IAnnonceService _service;
+        private IService<Annonce> _service;
 
-        public AnnoncesController(IAnnonceService service)
+        public AnnoncesController(IService<Annonce> service)
         {
             _service = service;
         }
@@ -59,13 +59,17 @@ namespace SecondLifeAPI.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
-            var res = _service.Delete(id);
-            if(res)
+            var res = _service.Get(id);
+            if (res != null)
             {
+                _service.Remove(res);
                 return Ok();
             }
 
             return BadRequest();
+
+
+
         }
     }
 }

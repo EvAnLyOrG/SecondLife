@@ -6,7 +6,7 @@ using SecondLife.Model;
 
 namespace SecondLife.Model.Migrations
 {
-    [DbContext(typeof(AnnonceDbContext))]
+    [DbContext(typeof(SalesDbContext))]
     partial class AnnonceDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

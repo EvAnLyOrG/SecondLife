@@ -7,6 +7,45 @@ using System.Text;
 
 namespace SecondLife.Services.Services
 {
+    public class GenericService<T> : IService<T> where T : class
+    {
+        private IRepository<T> _repo;
+
+        public GenericService(IRepository<T> repo)
+        {
+            _repo = repo;
+        }
+
+        public T Add(T annonce)
+        {
+            return _repo.Add(annonce);
+        }
+
+        public T Get(in int id)
+        {
+            return _repo.One(id);
+        }
+
+        public List<T> List()
+        {
+            return _repo.All();
+        }
+
+        public T Patch(in int id, JsonPatchDocument<T> jsonPatch)
+        {
+            throw new NotImplementedException();
+        }
+
+        public T Remove(T annonce)
+        {
+            if (annonce == null)
+            {
+                return null;
+            }
+            _repo.Remove(annonce);
+            return annonce;
+        }
+    }
     public class AnnonceService : IAnnonceService
     {
         private IAnnonceRepository _repo;
@@ -41,7 +80,7 @@ namespace SecondLife.Services.Services
             return _repo.Add(annonce);
         }
 
-        public Annonce Patch(int id, JsonPatchDocument<Annonce> document)
+        public Annonce Patch(in int id, JsonPatchDocument<Annonce> document)
         {
             var updatedObject = Get(id);
             document.ApplyTo(updatedObject);
@@ -49,14 +88,14 @@ namespace SecondLife.Services.Services
             return updatedObject;
         }
 
-        public bool Delete(int id)
-        {
-            return _repo.Delete(id);
-        }
-
         public Annonce Get(in int id)
         {
             return _repo.Get(id);
+        }
+
+        public Annonce Remove(Annonce annonce)
+        {
+            throw new NotImplementedException();
         }
     }
 }
