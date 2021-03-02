@@ -7,11 +7,54 @@ using System.Text;
 
 namespace SecondLife.Repositories.Repositories
 {
+    public class GenericRepository<T> : IRepository<T> where T : class
+    {
+        private readonly SalesDbContext _context;
+
+        public GenericRepository(SalesDbContext context)
+        {
+            _context = context;
+        }
+
+        public T Add(T annonce)
+        {
+            _context.Add(annonce);
+            _context.SaveChanges();
+            return annonce;
+        }
+
+        public List<T> All()
+        {
+            return _context.Set<T>().ToList();
+        }
+
+        public T Remove(T annonce)
+        {
+            _context.Remove(annonce);
+            _context.SaveChanges();
+            return annonce;
+        }
+
+        public bool Exists(T annonce)
+        {
+            throw new NotImplementedException();
+        }
+
+        public T One(int id)
+        {
+            return _context.Set<T>().FirstOrDefault();
+        }
+
+        public T Update(T annonce)
+        {
+            throw new NotImplementedException();
+        }
+    }
     public class AnnonceRepository : IAnnonceRepository
     {
-        private readonly AnnonceDbContext _context;
+        private readonly SalesDbContext _context;
 
-        public AnnonceRepository(AnnonceDbContext context)
+        public AnnonceRepository(SalesDbContext context)
         {
             _context = context;
         }
@@ -49,7 +92,6 @@ namespace SecondLife.Repositories.Repositories
         {
             var obj = Get(id);
             if (obj == null) return false;
-
             _context.Annonces.Remove(obj);
             _context.SaveChanges();
             return Get(id) == null;

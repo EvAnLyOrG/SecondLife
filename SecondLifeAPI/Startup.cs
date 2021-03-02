@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using SecondLife.Model;
+using SecondLife.Model.Entities;
 using SecondLife.Repositories.Repositories;
 using SecondLife.Services.Services;
 using System;
@@ -30,10 +31,22 @@ namespace SecondLifeAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<IAnnonceService, AnnonceService>();
-            services.AddScoped<IAnnonceRepository, AnnonceRepository>();
-            services.AddDbContextPool<AnnonceDbContext>(x => 
+            InjectServices(services);
+            InjectRepositories(services);
+            services.AddDbContextPool<SalesDbContext>(x =>
             x.UseMySql(Configuration.GetConnectionString("SecondLifeConnection")));
+        }
+
+        private static void InjectRepositories(IServiceCollection services)
+        {
+            services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IAnnonceRepository, AnnonceRepository>();
+        }
+
+        private static void InjectServices(IServiceCollection services)
+        {
+            services.AddScoped(typeof(IService<>), typeof(GenericService<>));
+            services.AddScoped<IAnnonceService, AnnonceService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
