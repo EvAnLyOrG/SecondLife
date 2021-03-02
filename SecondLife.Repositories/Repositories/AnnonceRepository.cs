@@ -1,4 +1,4 @@
-﻿using SecondLife.Model;
+﻿econdLife.Model;
 using SecondLife.Model.Entities;
 using System;
 using System.Collections.Generic;

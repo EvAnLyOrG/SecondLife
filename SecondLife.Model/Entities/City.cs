@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-public class Class1
+namespace SecondLife.Model.Entities
 {
-	public Class1()
-	{
-	}
+    public class City
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+    }
 }

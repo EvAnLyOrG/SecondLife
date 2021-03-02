@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SecondLife.Model",
+    "\\SecondLife.Model\\Entities",
+    "\\SecondLife.Repositories",
+    "\\SecondLife.Repositories\\Repositories",
+    "\\SecondLifeAPI"
+  ],
+  "SelectedNode": "\\SecondLife.Repositories\\Repositories\\AnnonceRepository.cs",
+  "PreviewInSolutionExplorer": false
+}
