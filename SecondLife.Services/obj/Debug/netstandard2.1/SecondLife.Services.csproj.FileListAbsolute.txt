@@ -26,3 +26,17 @@ C:\Dev\Workspace\SecondLife\SecondLife.Services\obj\Debug\netstandard2.1\SecondL
 C:\Dev\Workspace\SecondLife\SecondLife.Services\obj\Debug\netstandard2.1\SecondLife.Services.csproj.CopyComplete
 C:\Dev\Workspace\SecondLife\SecondLife.Services\obj\Debug\netstandard2.1\SecondLife.Services.dll
 C:\Dev\Workspace\SecondLife\SecondLife.Services\obj\Debug\netstandard2.1\SecondLife.Services.pdb
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\bin\Debug\netstandard2.1\SecondLife.Services.deps.json
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\bin\Debug\netstandard2.1\SecondLife.Services.dll
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\bin\Debug\netstandard2.1\SecondLife.Services.pdb
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\bin\Debug\netstandard2.1\SecondLife.Model.dll
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\bin\Debug\netstandard2.1\SecondLife.Repositories.dll
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\bin\Debug\netstandard2.1\SecondLife.Model.pdb
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\bin\Debug\netstandard2.1\SecondLife.Repositories.pdb
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\obj\Debug\netstandard2.1\SecondLife.Services.csprojAssemblyReference.cache
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\obj\Debug\netstandard2.1\SecondLife.Services.AssemblyInfoInputs.cache
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\obj\Debug\netstandard2.1\SecondLife.Services.AssemblyInfo.cs
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\obj\Debug\netstandard2.1\SecondLife.Services.csproj.CoreCompileInputs.cache
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\obj\Debug\netstandard2.1\SecondLife.Services.csproj.CopyComplete
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\obj\Debug\netstandard2.1\SecondLife.Services.dll
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Services\obj\Debug\netstandard2.1\SecondLife.Services.pdb

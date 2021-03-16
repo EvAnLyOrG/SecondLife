@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Repositories\\SecondLife.Repositories.csproj": {}
+    "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Repositories\\SecondLife.Repositories.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj": {
+    "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj",
+        "projectUniqueName": "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj",
         "projectName": "SecondLife.Model",
-        "projectPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj",
+        "projectPath": "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj",
         "packagesPath": "C:\\Users\\marlo\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\obj\\",
+        "outputPath": "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -78,14 +78,14 @@
         }
       }
     },
-    "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Repositories\\SecondLife.Repositories.csproj": {
+    "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Repositories\\SecondLife.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Repositories\\SecondLife.Repositories.csproj",
+        "projectUniqueName": "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Repositories\\SecondLife.Repositories.csproj",
         "projectName": "SecondLife.Repositories",
-        "projectPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Repositories\\SecondLife.Repositories.csproj",
+        "projectPath": "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Repositories\\SecondLife.Repositories.csproj",
         "packagesPath": "C:\\Users\\marlo\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Repositories\\obj\\",
+        "outputPath": "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -102,8 +102,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj": {
-                "projectPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj"
+              "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj": {
+                "projectPath": "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj"
               }
             }
           }

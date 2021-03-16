@@ -1066,11 +1066,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\Workspace\\SecondLife\\SecondLifeAPI\\SecondLifeAPI.csproj",
+      "projectUniqueName": "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLifeAPI\\SecondLifeAPI.csproj",
       "projectName": "SecondLifeAPI",
-      "projectPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLifeAPI\\SecondLifeAPI.csproj",
+      "projectPath": "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLifeAPI\\SecondLifeAPI.csproj",
       "packagesPath": "C:\\Users\\marlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLifeAPI\\obj\\",
+      "outputPath": "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLifeAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\marlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1087,11 +1087,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj": {
-              "projectPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj"
+            "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj": {
+              "projectPath": "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj"
             },
-            "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Services\\SecondLife.Services.csproj": {
-              "projectPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Services\\SecondLife.Services.csproj"
+            "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Services\\SecondLife.Services.csproj": {
+              "projectPath": "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Services\\SecondLife.Services.csproj"
             }
           }
         }
