@@ -3,10 +3,17 @@ using SecondLife.Model.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace SecondLife.Repositories.Repositories
 {
+<<<<<<< HEAD
+
+    public class AnnonceRepository : Repository<Annonce>, IAnnonceRepository
+    {
+        public AnnonceRepository(AnnonceDbContext context) : base(context)
+=======
     public class GenericRepository<T> : IRepository<T> where T : class
     {
         private readonly SalesDbContext _context;
@@ -55,16 +62,12 @@ namespace SecondLife.Repositories.Repositories
         private readonly SalesDbContext _context;
 
         public AnnonceRepository(SalesDbContext context)
+>>>>>>> UserService
         {
-            _context = context;
+
         }
 
-        public List<Annonce> All()
-        {
-            return _context.Annonces.ToList();
-        }
-
-        public Annonce One()
+        public Annonce One(Expression<Func<Annonce, bool>> condition)
         {
             return _context.Annonces.FirstOrDefault();
         }

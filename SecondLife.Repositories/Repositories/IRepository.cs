@@ -6,18 +6,14 @@ using System.Text;
 
 namespace SecondLife.Repositories.Repositories
 {
-    public interface IAnnonceRepository : IRepository<Annonce>
-    {
-
-    }
-
     public interface IRepository<T>
     {
-        List<T> All();
-        T One(int id);
+        List<T> All(Expression<Func<T, bool>> condition);
+        T One(Expression<Func<T, bool>> condition);
         T Add(T annonce);
-        T Remove(T annonce);
-        T Update(T annonce);
         bool Exists(T annonce);
+        void Update(T updatedObject);
+        bool Delete(int id);
+        T Get(int id);
     }
 }

@@ -6,6 +6,7 @@ using SecondLife.Services.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace SecondLifeAPI.Controllers
@@ -21,9 +22,14 @@ namespace SecondLifeAPI.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Annonce>> List()
+        public ActionResult<List<Annonce>> List(string title)
         {
-            var res = _service.List();
+            Expression<Func<Annonce, bool>> condition = x => true;
+            if (title != null)
+            {
+                condition = x => x.Title.Contains(title) || x.Description.Contains(title);
+            }
+            var res = _service.List(condition);
             if (res.Count == 0)
             {
                 return NoContent();

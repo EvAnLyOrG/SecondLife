@@ -3,6 +3,7 @@ using SecondLife.Model.Entities;
 using SecondLife.Repositories.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace SecondLife.Services.Services
@@ -55,9 +56,9 @@ namespace SecondLife.Services.Services
             _repo = repo;
         }
 
-        public List<Annonce> List()
+        public List<Annonce> List(Expression<Func<Annonce, bool>> condition)
         {
-            return _repo.All();
+            return _repo.All(condition);
         }
 
         public Annonce Get(int id)
