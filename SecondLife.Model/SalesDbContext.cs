@@ -6,11 +6,11 @@ using System.Text;
 
 namespace SecondLife.Model
 {
-    public class AnnonceDbContext : DbContext
+    public class SalesDbContext : DbContext
     {
         public DbSet<Annonce> Annonces { get; set; }
 
-        public AnnonceDbContext(DbContextOptions<AnnonceDbContext> options) : base(options)
+        public SalesDbContext(DbContextOptions<SalesDbContext> options) : base(options)
         {
 
         }
