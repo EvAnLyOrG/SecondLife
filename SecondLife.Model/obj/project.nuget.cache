@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NdEqAwBBXKbK+EMx6QCnGYRRxOUQqM7pcnMeU1XKI0g5LMhFOJDgGgL0N73PIG7mJLBDkZaSH57z1qV9r9F3rw==",
+  "dgSpecHash": "YshW/PKJc3SEHwQIu5yq9ec0h6xs59qMP7e/9dQmp0YGrDYN7LyQm//K2ptLr6de08z+Hu5xE6gTP0ohVUnRXA==",
   "success": true,
-  "projectFilePath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj",
+  "projectFilePath": "C:\\Dev\\Workspace\\NFE114\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marlo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\marlo\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

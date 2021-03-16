@@ -22,3 +22,15 @@ C:\Dev\Workspace\SecondLife\SecondLife.Repositories\obj\Debug\netstandard2.1\Sec
 C:\Dev\Workspace\SecondLife\SecondLife.Repositories\obj\Debug\netstandard2.1\SecondLife.Repositories.csproj.CopyComplete
 C:\Dev\Workspace\SecondLife\SecondLife.Repositories\obj\Debug\netstandard2.1\SecondLife.Repositories.dll
 C:\Dev\Workspace\SecondLife\SecondLife.Repositories\obj\Debug\netstandard2.1\SecondLife.Repositories.pdb
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Repositories\bin\Debug\netstandard2.1\SecondLife.Repositories.deps.json
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Repositories\bin\Debug\netstandard2.1\SecondLife.Repositories.dll
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Repositories\bin\Debug\netstandard2.1\SecondLife.Repositories.pdb
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Repositories\bin\Debug\netstandard2.1\SecondLife.Model.dll
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Repositories\bin\Debug\netstandard2.1\SecondLife.Model.pdb
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Repositories\obj\Debug\netstandard2.1\SecondLife.Repositories.csprojAssemblyReference.cache
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Repositories\obj\Debug\netstandard2.1\SecondLife.Repositories.AssemblyInfoInputs.cache
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Repositories\obj\Debug\netstandard2.1\SecondLife.Repositories.AssemblyInfo.cs
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Repositories\obj\Debug\netstandard2.1\SecondLife.Repositories.csproj.CoreCompileInputs.cache
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Repositories\obj\Debug\netstandard2.1\SecondLife.Repositories.csproj.CopyComplete
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Repositories\obj\Debug\netstandard2.1\SecondLife.Repositories.dll
+C:\Dev\Workspace\NFE114\SecondLife\SecondLife.Repositories\obj\Debug\netstandard2.1\SecondLife.Repositories.pdb
