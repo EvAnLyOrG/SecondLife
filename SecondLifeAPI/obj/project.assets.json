@@ -1061,19 +1061,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marlo\\.nuget\\packages\\": {}
+    "C:\\Users\\Donosaure\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\Workspace\\SecondLife\\SecondLifeAPI\\SecondLifeAPI.csproj",
+      "projectUniqueName": "F:\\Projet android\\SecondLife\\SecondLifeAPI\\SecondLifeAPI.csproj",
       "projectName": "SecondLifeAPI",
-      "projectPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLifeAPI\\SecondLifeAPI.csproj",
-      "packagesPath": "C:\\Users\\marlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLifeAPI\\obj\\",
+      "projectPath": "F:\\Projet android\\SecondLife\\SecondLifeAPI\\SecondLifeAPI.csproj",
+      "packagesPath": "C:\\Users\\Donosaure\\.nuget\\packages\\",
+      "outputPath": "F:\\Projet android\\SecondLife\\SecondLifeAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\marlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Donosaure\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1087,11 +1087,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj": {
-              "projectPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj"
+            "F:\\Projet android\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj": {
+              "projectPath": "F:\\Projet android\\SecondLife\\SecondLife.Model\\SecondLife.Model.csproj"
             },
-            "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Services\\SecondLife.Services.csproj": {
-              "projectPath": "C:\\Dev\\Workspace\\SecondLife\\SecondLife.Services\\SecondLife.Services.csproj"
+            "F:\\Projet android\\SecondLife\\SecondLife.Services\\SecondLife.Services.csproj": {
+              "projectPath": "F:\\Projet android\\SecondLife\\SecondLife.Services\\SecondLife.Services.csproj"
             }
           }
         }
@@ -1135,7 +1135,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

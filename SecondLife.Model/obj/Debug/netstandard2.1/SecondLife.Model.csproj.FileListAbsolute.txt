@@ -16,3 +16,12 @@ C:\Dev\Workspace\SecondLife\SecondLife.Model\obj\Debug\netstandard2.1\SecondLife
 C:\Dev\Workspace\SecondLife\SecondLife.Model\obj\Debug\netstandard2.1\SecondLife.Model.csproj.CoreCompileInputs.cache
 C:\Dev\Workspace\SecondLife\SecondLife.Model\obj\Debug\netstandard2.1\SecondLife.Model.dll
 C:\Dev\Workspace\SecondLife\SecondLife.Model\obj\Debug\netstandard2.1\SecondLife.Model.pdb
+F:\Projet android\SecondLife\SecondLife.Model\bin\Debug\netstandard2.1\SecondLife.Model.deps.json
+F:\Projet android\SecondLife\SecondLife.Model\bin\Debug\netstandard2.1\SecondLife.Model.dll
+F:\Projet android\SecondLife\SecondLife.Model\bin\Debug\netstandard2.1\SecondLife.Model.pdb
+F:\Projet android\SecondLife\SecondLife.Model\obj\Debug\netstandard2.1\SecondLife.Model.csprojAssemblyReference.cache
+F:\Projet android\SecondLife\SecondLife.Model\obj\Debug\netstandard2.1\SecondLife.Model.AssemblyInfoInputs.cache
+F:\Projet android\SecondLife\SecondLife.Model\obj\Debug\netstandard2.1\SecondLife.Model.AssemblyInfo.cs
+F:\Projet android\SecondLife\SecondLife.Model\obj\Debug\netstandard2.1\SecondLife.Model.csproj.CoreCompileInputs.cache
+F:\Projet android\SecondLife\SecondLife.Model\obj\Debug\netstandard2.1\SecondLife.Model.dll
+F:\Projet android\SecondLife\SecondLife.Model\obj\Debug\netstandard2.1\SecondLife.Model.pdb

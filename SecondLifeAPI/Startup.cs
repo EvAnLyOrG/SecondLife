@@ -39,14 +39,15 @@ namespace SecondLifeAPI
 
         private static void InjectRepositories(IServiceCollection services)
         {
-            services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
-            services.AddScoped<IAnnonceRepository, AnnonceRepository>();
+            services.AddScoped(typeof(IRepository<>), typeof(AnnonceRepository<>));
+            services.AddScoped<IAnnonceRepository, GenericRepository>();
+            services.AddScoped<IRepository<User>, UserRepository>();
         }
 
         private static void InjectServices(IServiceCollection services)
         {
             services.AddScoped(typeof(IService<>), typeof(GenericService<>));
-            services.AddScoped<IAnnonceService, AnnonceService>();
+            services.AddScoped<IAnnonceService, GenericService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

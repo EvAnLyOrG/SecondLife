@@ -10,6 +10,7 @@ namespace SecondLife.Services.Services
     public class GenericService<T> : IService<T> where T : class
     {
         private IRepository<T> _repo;
+        private IValidator<T> _validator;
 
         public GenericService(IRepository<T> repo)
         {
@@ -46,11 +47,11 @@ namespace SecondLife.Services.Services
             return annonce;
         }
     }
-    public class AnnonceService : IAnnonceService
+    public class GenericService : IAnnonceService
     {
         private IAnnonceRepository _repo;
 
-        public AnnonceService(IAnnonceRepository repo)
+        public GenericService(IAnnonceRepository repo)
         {
             _repo = repo;
         }

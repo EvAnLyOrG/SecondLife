@@ -8,7 +8,7 @@ using SecondLife.Model;
 namespace SecondLife.Model.Migrations
 {
     [DbContext(typeof(SalesDbContext))]
-    [Migration("20210216135019_Initial")]
+    [Migration("20210302145725_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

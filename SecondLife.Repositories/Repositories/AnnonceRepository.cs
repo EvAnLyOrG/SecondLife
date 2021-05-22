@@ -7,11 +7,11 @@ using System.Text;
 
 namespace SecondLife.Repositories.Repositories
 {
-    public class GenericRepository<T> : IRepository<T> where T : class
+    public class AnnonceRepository<T> : IRepository<T> where T : class
     {
         private readonly SalesDbContext _context;
 
-        public GenericRepository(SalesDbContext context)
+        public AnnonceRepository(SalesDbContext context)
         {
             _context = context;
         }
@@ -50,11 +50,11 @@ namespace SecondLife.Repositories.Repositories
             throw new NotImplementedException();
         }
     }
-    public class AnnonceRepository : IAnnonceRepository
+    public class GenericRepository : IAnnonceRepository
     {
         private readonly SalesDbContext _context;
 
-        public AnnonceRepository(SalesDbContext context)
+        public GenericRepository(SalesDbContext context)
         {
             _context = context;
         }
