@@ -1,27 +1,28 @@
-﻿using Microsoft.AspNetCore.JsonPatch;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
 using SecondLife.Model.Entities;
 using SecondLife.Services.Services;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using SecondLife.Services.Interfaces;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace SecondLifeAPI.Controllers
 {
     [ApiController, Route("api/[controller]")]
-    public class AnnoncesController : ControllerBase
+    public class UserController : ControllerBase
     {
-        private IService<Annonce> _service;
+        private IService<User> _service;
 
-        public AnnoncesController(IService<Annonce> service)
+        public UserController(IService<User> service)
         {
             _service = service;
         }
 
         [HttpGet]
-        public ActionResult<List<Annonce>> List()
+        public ActionResult<List<User>> List()
         {
             var res = _service.List();
             if (res.Count == 0)
@@ -33,20 +34,20 @@ namespace SecondLifeAPI.Controllers
         }
 
         [HttpPatch("{id}")]
-        public ActionResult<Annonce> Patch(int id, [FromBody]JsonPatchDocument<Annonce> document)
+        public ActionResult<User> Patch(int id, [FromBody] JsonPatchDocument<User> document)
         {
             var updateAnnonce = _service.Patch(id, document);
             return Ok(updateAnnonce);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Annonce> Get(int id)
+        public ActionResult<User> Get(int id)
         {
             return _service.Get(id);
         }
 
         [HttpPost]
-        public ActionResult<Annonce> Post(Annonce annonce)
+        public ActionResult<User> Post(User annonce)
         {
             var res = _service.Add(annonce);
             if (res == null)
@@ -68,5 +69,6 @@ namespace SecondLifeAPI.Controllers
 
             return BadRequest();
         }
+
     }
 }

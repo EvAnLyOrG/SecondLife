@@ -11,6 +11,7 @@ using SecondLife.Model;
 using SecondLife.Model.Entities;
 using SecondLife.Repositories.Repositories;
 using SecondLife.Services.Services;
+using SecondLife.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,15 +40,17 @@ namespace SecondLifeAPI
 
         private static void InjectRepositories(IServiceCollection services)
         {
-            services.AddScoped(typeof(IRepository<>), typeof(AnnonceRepository<>));
-            services.AddScoped<IAnnonceRepository, GenericRepository>();
+            services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IRepository<Annonce>, AnnonceRepository>();
             services.AddScoped<IRepository<User>, UserRepository>();
         }
 
         private static void InjectServices(IServiceCollection services)
         {
             services.AddScoped(typeof(IService<>), typeof(GenericService<>));
-            services.AddScoped<IAnnonceService, GenericService>();
+            services.AddScoped<IService<Annonce>, AnnonceService>();
+            services.AddScoped<IService<User>, UserService>();
+            services.AddScoped<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

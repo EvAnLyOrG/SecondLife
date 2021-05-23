@@ -4,12 +4,13 @@ using SecondLife.Repositories.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using SecondLife.Services.Interfaces;
 
 namespace SecondLife.Services.Services
 {
     public class GenericService<T> : IService<T> where T : class
     {
-        private IRepository<T> _repo;
+        protected IRepository<T> _repo;
         //private IValidator<T> _validator;
 
         public GenericService(IRepository<T> repo)
@@ -47,56 +48,5 @@ namespace SecondLife.Services.Services
             return annonce;
         }
     }
-    public class GenericService : IAnnonceService
-    {
-        private IAnnonceRepository _repo;
-
-        public GenericService(IAnnonceRepository repo)
-        {
-            _repo = repo;
-        }
-
-        public List<Annonce> List()
-        {
-            return _repo.All();
-        }
-
-        public Annonce Get(int id)
-        {
-            return _repo.Get(id);
-        }
-
-        public Annonce Add(Annonce annonce)
-        {
-            if (String.IsNullOrEmpty(annonce.Title))
-            {
-                return null;
-            }
-
-            if (_repo.Exists(annonce))
-            {
-                return null;
-            }
-
-            return _repo.Add(annonce);
-        }
-
-        public Annonce Patch(in int id, JsonPatchDocument<Annonce> document)
-        {
-            var updatedObject = Get(id);
-            document.ApplyTo(updatedObject);
-            _repo.Update(updatedObject);
-            return updatedObject;
-        }
-
-        public Annonce Get(in int id)
-        {
-            return _repo.Get(id);
-        }
-
-        public Annonce Remove(Annonce annonce)
-        {
-            throw new NotImplementedException();
-        }
-    }
+    
 }
