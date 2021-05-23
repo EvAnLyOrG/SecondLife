@@ -4,6 +4,7 @@ using System.Text;
 using SecondLife.Services.Interfaces;
 using SecondLife.Model.Entities;
 using SecondLife.Repositories.Repositories;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace SecondLife.Services.Services
 {
@@ -14,9 +15,42 @@ namespace SecondLife.Services.Services
             _repo = repo;
         }
 
-        public List<User> Find()
+        public List<User> FindAll()
         {
             return _repo.All();
+        }
+
+        public User Get(int id)
+        {
+            return _repo.One(id);
+        }
+
+        public User Add(User annonce)
+        {
+            if (String.IsNullOrEmpty(annonce.Email))
+            {
+                return null;
+            }
+
+            if (_repo.Exists(annonce))
+            {
+                return null;
+            }
+
+            return _repo.Add(annonce);
+        }
+
+        public User Patch(int id, JsonPatchDocument<User> document)
+        {
+            var updatedObject = Get(id);
+            document.ApplyTo(updatedObject);
+            _repo.Update(updatedObject);
+            return updatedObject;
+        }
+
+        public User Remove(User annonce)
+        {
+            throw new NotImplementedException();
         }
     }
 }

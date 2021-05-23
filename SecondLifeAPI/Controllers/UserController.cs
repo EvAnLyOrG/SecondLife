@@ -36,8 +36,9 @@ namespace SecondLifeAPI.Controllers
         [HttpPatch("{id}")]
         public ActionResult<User> Patch(int id, [FromBody] JsonPatchDocument<User> document)
         {
-            var updateAnnonce = _service.Patch(id, document);
-            return Ok(updateAnnonce);
+            var updateUser = _service.Get(id);
+            if (updateUser == null) return NoContent();
+            return Ok(updateUser);
         }
 
         [HttpGet("{id}")]

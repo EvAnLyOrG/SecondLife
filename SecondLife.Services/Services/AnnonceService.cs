@@ -23,7 +23,7 @@ namespace SecondLife.Services.Services
 
         public Annonce Get(int id)
         {
-            return _repo.Get(id);
+            return _repo.One(id);
         }
 
         public Annonce Add(Annonce annonce)
@@ -41,17 +41,12 @@ namespace SecondLife.Services.Services
             return _repo.Add(annonce);
         }
 
-        public Annonce Patch(in int id, JsonPatchDocument<Annonce> document)
+        public Annonce Patch(int id, JsonPatchDocument<Annonce> document)
         {
             var updatedObject = Get(id);
             document.ApplyTo(updatedObject);
             _repo.Update(updatedObject);
             return updatedObject;
-        }
-
-        public Annonce Get(in int id)
-        {
-            return _repo.Get(id);
         }
 
         public Annonce Remove(Annonce annonce)

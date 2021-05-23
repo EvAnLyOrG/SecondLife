@@ -23,7 +23,7 @@ namespace SecondLife.Services.Services
             return _repo.Add(annonce);
         }
 
-        public T Get(in int id)
+        public T Get(int id)
         {
             return _repo.One(id);
         }
@@ -33,7 +33,7 @@ namespace SecondLife.Services.Services
             return _repo.All();
         }
 
-        public T Patch(in int id, JsonPatchDocument<T> jsonPatch)
+        public T Patch(T annonce, JsonPatchDocument<T> jsonPatch)
         {
             throw new NotImplementedException();
         }
