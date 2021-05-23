@@ -7,10 +7,10 @@ namespace SecondLife.Model.Entities
     public class User
     {
         public int Id { get; set; }
-        public String UserId { get; set; }
-        public String Password { get; set; }
-        public String Name { get; set; }
-        public String Firstname { get; set; }
-        public String Email { get; set; }
+        public string UserId { get; set; }
+        public string Password { get; set; }
+        public string Name { get; set; }
+        public string Firstname { get; set; }
+        public string Email { get; set; }
     }
 }

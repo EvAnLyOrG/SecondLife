@@ -10,7 +10,7 @@ namespace SecondLife.Services.Services
     public class GenericService<T> : IService<T> where T : class
     {
         private IRepository<T> _repo;
-        private IValidator<T> _validator;
+        //private IValidator<T> _validator;
 
         public GenericService(IRepository<T> repo)
         {
