@@ -4,7 +4,11 @@ using System.Text;
 
 namespace SecondLife.Services.Validators
 {
-    class IValidator<T> where T : class
+    public interface IValidator<T>
     {
+        bool CanAdd(T obj);
+        bool CanEdit(T obj);
+        bool CanDelete(T obj);
+        bool CanGet(T obj);
     }
 }

@@ -150,3 +150,5 @@ F:\Projet android\SecondLife\SecondLifeAPI\obj\Debug\netcoreapp3.1\SecondLifeAPI
 F:\Projet android\SecondLife\SecondLifeAPI\obj\Debug\netcoreapp3.1\SecondLifeAPI.dll
 F:\Projet android\SecondLife\SecondLifeAPI\obj\Debug\netcoreapp3.1\SecondLifeAPI.pdb
 F:\Projet android\SecondLife\SecondLifeAPI\obj\Debug\netcoreapp3.1\SecondLifeAPI.genruntimeconfig.cache
+F:\Projet android\SecondLife\SecondLifeAPI\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+F:\Projet android\SecondLife\SecondLifeAPI\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.TestFramework.dll

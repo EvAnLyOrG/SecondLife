@@ -7,7 +7,7 @@ namespace SecondLife.Services.Interfaces
 {
     public interface IService<T> where T : class
     {
-        public List<T> List();
+        List<T> List();
         T Get(int id);
         T Add(T annonce);
         T Patch(T id, JsonPatchDocument<T> jsonPatch);

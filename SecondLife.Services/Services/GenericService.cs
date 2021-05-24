@@ -5,22 +5,24 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using SecondLife.Services.Interfaces;
+using SecondLife.Services.Validators;
 
 namespace SecondLife.Services.Services
 {
     public class GenericService<T> : IService<T> where T : class
     {
         protected IRepository<T> _repo;
-        //private IValidator<T> _validator;
+        protected IValidator<T> _validator;
 
-        public GenericService(IRepository<T> repo)
+        public GenericService(IRepository<T> repo, IValidator<T> validator)
         {
             _repo = repo;
+            _validator = validator;
         }
 
-        public T Add(T annonce)
+        public T Add(T obj)
         {
-            return _repo.Add(annonce);
+            return _repo.Add(obj);
         }
 
         public T Get(int id)
@@ -33,19 +35,19 @@ namespace SecondLife.Services.Services
             return _repo.All();
         }
 
-        public T Patch(T annonce, JsonPatchDocument<T> jsonPatch)
+        public T Patch(T obj, JsonPatchDocument<T> jsonPatch)
         {
             throw new NotImplementedException();
         }
 
-        public T Remove(T annonce)
+        public T Remove(T obj)
         {
-            if (annonce == null)
+            if (obj == null)
             {
                 return null;
             }
-            _repo.Remove(annonce);
-            return annonce;
+            _repo.Remove(obj);
+            return obj;
         }
     }
     

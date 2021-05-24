@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using SecondLife.Services.Interfaces;
+using SecondLife.Services.Validators;
 using SecondLife.Model.Entities;
 using SecondLife.Repositories.Repositories;
 using Microsoft.AspNetCore.JsonPatch;
@@ -10,7 +11,7 @@ namespace SecondLife.Services.Services
 {
     public class UserService : GenericService<User>, IUserService
     {
-        public UserService(IRepository<User> repo) : base(repo)
+        public UserService(IRepository<User> repo, IValidator<Annonce> validator) : base(repo, validator)
         {
             _repo = repo;
         }

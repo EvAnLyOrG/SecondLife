@@ -14,6 +14,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondLife.Repositories", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondLife.Services", "..\SecondLife.Services\SecondLife.Services.csproj", "{74AC54A4-551A-48CC-BD16-DCA9CEBFAE8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondLife.UnitTest", "..\UnitTest\SecondLife.UnitTest.csproj", "{AC27EA78-0AF5-4C8A-82DA-49E3B599047D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{74AC54A4-551A-48CC-BD16-DCA9CEBFAE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74AC54A4-551A-48CC-BD16-DCA9CEBFAE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74AC54A4-551A-48CC-BD16-DCA9CEBFAE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC27EA78-0AF5-4C8A-82DA-49E3B599047D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC27EA78-0AF5-4C8A-82DA-49E3B599047D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC27EA78-0AF5-4C8A-82DA-49E3B599047D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC27EA78-0AF5-4C8A-82DA-49E3B599047D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

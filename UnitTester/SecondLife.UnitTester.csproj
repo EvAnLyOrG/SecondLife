@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SecondLife.Model\SecondLife.Model.csproj" />
+    <ProjectReference Include="..\SecondLife.Services\SecondLife.Services.csproj" />
+  </ItemGroup>
+
+</Project>
