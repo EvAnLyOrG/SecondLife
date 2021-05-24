@@ -22,6 +22,7 @@ public class GenericUnitTest<T> where T : class
 	[TestMethod]
 	public void Add_Null_ThenHasError()
     {
-
+		var res = _service.Add(null);
+		Assert.IsNull(res);
 	}
 }

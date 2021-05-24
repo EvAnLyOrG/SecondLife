@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SecondLife.Services.Interfaces
 {
-    interface IAnnonceService : IService<Annonce>
+    public interface IAnnonceService : IService<Annonce>
     {
     }
 }

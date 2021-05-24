@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using SecondLife.Model.Entities;
-using SecondLife.Services.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;

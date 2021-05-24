@@ -11,7 +11,7 @@ namespace SecondLife.Services.Services
 {
     public class UserService : GenericService<User>, IUserService
     {
-        public UserService(IRepository<User> repo, IValidator<Annonce> validator) : base(repo, validator)
+        public UserService(IRepository<User> repo, IValidator<User> validator) : base(repo, validator)
         {
             _repo = repo;
         }

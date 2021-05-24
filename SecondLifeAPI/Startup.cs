@@ -12,6 +12,7 @@ using SecondLife.Model.Entities;
 using SecondLife.Repositories.Repositories;
 using SecondLife.Services.Services;
 using SecondLife.Services.Interfaces;
+using SecondLife.Services.Validators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,7 @@ namespace SecondLifeAPI
             services.AddControllers();
             InjectServices(services);
             InjectRepositories(services);
+            InjectValidators(services);
             services.AddDbContextPool<SalesDbContext>(x =>
             x.UseMySql(Configuration.GetConnectionString("SecondLifeConnection")));
         }
@@ -51,6 +53,14 @@ namespace SecondLifeAPI
             services.AddScoped<IService<Annonce>, AnnonceService>();
             services.AddScoped<IService<User>, UserService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IAnnonceService, AnnonceService>();
+        }
+
+        private static void InjectValidators(IServiceCollection services)
+        {
+            services.AddScoped(typeof(IValidator<>), typeof(GenericValidator<>));
+            services.AddScoped<IValidator<Annonce>, AnnonceValidator>();
+            services.AddScoped<IValidator<User>, UserValidator>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -5,7 +5,7 @@ using SecondLife.Repositories.Repositories;
 
 namespace SecondLife.Services.Validators
 {
-    class GenericValidator<T> : IValidator<T> where T : class
+    public class GenericValidator<T> : IValidator<T> where T : class
     {
         protected readonly IRepository<T> _repo;
 

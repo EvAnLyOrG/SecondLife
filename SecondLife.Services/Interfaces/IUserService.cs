@@ -5,7 +5,7 @@ using SecondLife.Model.Entities;
 
 namespace SecondLife.Services.Interfaces
 {
-    interface IUserService : IService<User>
+    public interface IUserService : IService<User>
     {
     }
 }
