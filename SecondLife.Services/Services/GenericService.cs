@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.JsonPatch;
-using SecondLife.Model.Entities;
 using SecondLife.Repositories.Repositories;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using SecondLife.Services.Interfaces;
 using SecondLife.Services.Validators;
 
@@ -37,7 +34,8 @@ namespace SecondLife.Services.Services
 
         public T Patch(T obj, JsonPatchDocument<T> jsonPatch)
         {
-            throw new NotImplementedException();
+            jsonPatch.ApplyTo(obj);
+            return _repo.Update(obj);
         }
 
         public T Remove(T obj)

@@ -1,10 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using SecondLife.Model.Entities;
+﻿using SecondLife.Model.Entities;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using SecondLife.Services.Interfaces;
 using Microsoft.AspNetCore.JsonPatch;
 
@@ -47,7 +43,7 @@ namespace SecondLifeAPI.Controllers
         }
 
         [HttpPost]
-        public ActionResult<User> Post(User annonce)
+        public ActionResult<User> Add(User annonce)
         {
             var res = _service.Add(annonce);
             if (res == null)

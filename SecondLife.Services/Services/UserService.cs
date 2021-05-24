@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using SecondLife.Services.Interfaces;
 using SecondLife.Services.Validators;
 using SecondLife.Model.Entities;

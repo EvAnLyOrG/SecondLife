@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using SecondLife.Model.Entities;
+﻿using SecondLife.Model.Entities;
 using SecondLife.Repositories.Repositories;
 
 namespace SecondLife.Services.Validators

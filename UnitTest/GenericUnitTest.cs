@@ -1,5 +1,4 @@
-﻿using System;
-using SecondLife.Services.Interfaces;
+﻿using SecondLife.Services.Interfaces;
 using SecondLife.Services.Services;
 using SecondLife.Services.Validators;
 using SecondLife.Repositories.Repositories;
@@ -20,9 +19,16 @@ public class GenericUnitTest<T> where T : class
 	}
 
 	[TestMethod]
-	public void Add_Null_ThenHasError()
+	public void Add_Null_ThenIsNull()
     {
 		var res = _service.Add(null);
+		Assert.IsNull(res);
+	}
+
+	[TestMethod]
+	public void Remove_Null_ThenIsNull()
+	{
+		var res = _service.Remove(null);
 		Assert.IsNull(res);
 	}
 }

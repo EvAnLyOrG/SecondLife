@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using SecondLife.Model;
 
 namespace SecondLife.Repositories.Repositories
@@ -15,11 +14,11 @@ namespace SecondLife.Repositories.Repositories
             _context = context;
         }
 
-        public T Add(T annonce)
+        public T Add(T obj)
         {
-            _context.Add(annonce);
+            _context.Add(obj);
             _context.SaveChanges();
-            return annonce;
+            return obj;
         }
 
         public List<T> All()
@@ -27,16 +26,16 @@ namespace SecondLife.Repositories.Repositories
             return _context.Set<T>().ToList();
         }
 
-        public T Remove(T annonce)
+        public T Remove(T obj)
         {
-            _context.Remove(annonce);
+            _context.Remove(obj);
             _context.SaveChanges();
-            return annonce;
+            return obj;
         }
 
-        public bool Exists(T annonce)
+        public bool Exists(T obj)
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().FirstOrDefault(x => x.Equals(obj)) != null;
         }
 
         public T One(int id)
@@ -44,7 +43,7 @@ namespace SecondLife.Repositories.Repositories
             return _context.Set<T>().FirstOrDefault();
         }
 
-        public T Update(T annonce)
+        public T Update(T obj)
         {
             throw new NotImplementedException();
         }

@@ -1,5 +1,4 @@
-﻿using System;
-using SecondLife.Services.Interfaces;
+﻿using SecondLife.Services.Interfaces;
 using SecondLife.Services.Services;
 using SecondLife.Services.Validators;
 using SecondLife.Repositories.Repositories;
@@ -19,10 +18,24 @@ public class UserUnitTest
 	}
 
 	[TestMethod]
-	public void Add_WithExistingTitle_ThenNull()
+	public void Add_WithExistingName_ThenNull()
 	{
 		_repoMock.Setup(x => x.Exists(It.IsAny<User>())).Returns(true);
 		var res = _service.Add(new User());
 		Assert.IsNull(res);
+	}
+
+	[TestMethod]
+	public void Add_WithNoName_ThenAddIsNotCalled()
+	{
+		var res = _service.Add(new User());
+		_repoMock.Verify(x => x.Add(It.IsAny<User>()), Times.Never);
+	}
+
+	[TestMethod]
+	public void Add_WithNoname_ThenRepoExistsIsCalled()
+	{
+		var res = _service.Add(new User());
+		_repoMock.Verify(x => x.Exists(It.IsAny<User>()), Times.Never());
 	}
 }
