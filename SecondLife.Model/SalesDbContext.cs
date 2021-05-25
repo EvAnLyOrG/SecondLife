@@ -7,6 +7,8 @@ namespace SecondLife.Model
     {
         public DbSet<Annonce> Annonces { get; set; }
         public DbSet<User> User { get; set; }
+        public DbSet<UserRating> UserRating { get; set; }
+        public DbSet<AnnonceRating> AnnonceRating { get; set; }
 
 
         public SalesDbContext(DbContextOptions<SalesDbContext> options) : base(options)

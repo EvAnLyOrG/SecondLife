@@ -3,21 +3,21 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using SecondLife.Services.Interfaces;
 using Microsoft.AspNetCore.JsonPatch;
-
 namespace SecondLifeAPI.Controllers
 {
-    [ApiController, Route("api/[controller]")]
-    public class UserController : ControllerBase
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UserRatingController : ControllerBase
     {
-        private IService<User> _service;
+        private IService<UserRating> _service;
 
-        public UserController(IService<User> service)
+        public UserRatingController(IService<UserRating> service)
         {
             _service = service;
         }
 
         [HttpGet]
-        public ActionResult<List<User>> List()
+        public ActionResult<List<UserRating>> List()
         {
             var res = _service.List();
             if (res.Count == 0)
@@ -29,7 +29,7 @@ namespace SecondLifeAPI.Controllers
         }
 
         [HttpPatch("{id}")]
-        public ActionResult<User> Patch(int id, [FromBody] JsonPatchDocument<User> document)
+        public ActionResult<UserRating> Patch(int id, [FromBody] JsonPatchDocument<User> document)
         {
             var updateUser = _service.Get(id);
             if (updateUser == null) return NoContent();
@@ -37,15 +37,15 @@ namespace SecondLifeAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<User> Get(int id)
+        public ActionResult<UserRating> Get(int id)
         {
             return _service.Get(id);
         }
 
         [HttpPost]
-        public ActionResult<User> Add(User user)
+        public ActionResult<UserRating> Add(UserRating userRating)
         {
-            var res = _service.Add(user);
+            var res = _service.Add(userRating);
             if (res == null)
             {
                 return BadRequest("invalid data");

@@ -39,6 +39,7 @@ namespace SecondLifeAPI
             services.AddScoped<IRepository<Annonce>, AnnonceRepository>();
             services.AddScoped<IRepository<AnnonceRating>, AnnonceRatingRepository>();
             services.AddScoped<IRepository<User>, UserRepository>();
+            services.AddScoped<IRepository<UserRating>, UserRatingRepository>();
         }
 
         private static void InjectServices(IServiceCollection services)
@@ -47,7 +48,9 @@ namespace SecondLifeAPI
             services.AddScoped<IService<Annonce>, AnnonceService>();
             services.AddScoped<IService<AnnonceRating>, AnnonceRatingService>();
             services.AddScoped<IService<User>, UserService>();
+            services.AddScoped<IService<UserRating>, UserRatingService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserRatingService, UserRatingService>();
             services.AddScoped<IAnnonceService, AnnonceService>();
             services.AddScoped<IAnnonceRatingService, AnnonceRatingService>();
         }
@@ -58,6 +61,7 @@ namespace SecondLifeAPI
             services.AddScoped<IValidator<Annonce>, AnnonceValidator>();
             services.AddScoped<IValidator<AnnonceRating>, AnnonceRatingValidator>();
             services.AddScoped<IValidator<User>, UserValidator>();
+            services.AddScoped<IValidator<UserRating>, UserRatingValidator>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
