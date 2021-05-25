@@ -37,6 +37,7 @@ namespace SecondLifeAPI
         {
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IRepository<Annonce>, AnnonceRepository>();
+            services.AddScoped<IRepository<AnnonceRating>, AnnonceRatingRepository>();
             services.AddScoped<IRepository<User>, UserRepository>();
         }
 
@@ -44,15 +45,18 @@ namespace SecondLifeAPI
         {
             services.AddScoped(typeof(IService<>), typeof(GenericService<>));
             services.AddScoped<IService<Annonce>, AnnonceService>();
+            services.AddScoped<IService<AnnonceRating>, AnnonceRatingService>();
             services.AddScoped<IService<User>, UserService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IAnnonceService, AnnonceService>();
+            services.AddScoped<IAnnonceRatingService, AnnonceRatingService>();
         }
 
         private static void InjectValidators(IServiceCollection services)
         {
             services.AddScoped(typeof(IValidator<>), typeof(GenericValidator<>));
             services.AddScoped<IValidator<Annonce>, AnnonceValidator>();
+            services.AddScoped<IValidator<AnnonceRating>, AnnonceRatingValidator>();
             services.AddScoped<IValidator<User>, UserValidator>();
         }
 
